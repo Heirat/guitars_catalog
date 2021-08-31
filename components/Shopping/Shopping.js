@@ -1,4 +1,10 @@
 class Shopping {
+    deleteFromCart(id) {
+        localStorageUtil.editProducts(id);
+        shoppingPage.render();
+        productsPage.render();
+    }
+
     clear() {
         ROOT_SHOPPING.innerHTML = '';
     }
@@ -15,6 +21,7 @@ class Shopping {
                     <tr>
                         <td class="shopping-element__name">🎸 ${name}</td>
                         <td class="shopping-element__price">${price.toLocaleString()} RUB</td>
+                        <td><button class="shopping-element__delete" onclick="shoppingPage.deleteFromCart('${id}');"></button></td>
                     </tr>
                 `;
                 sumCatalog += price;

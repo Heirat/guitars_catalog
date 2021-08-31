@@ -22,6 +22,19 @@
     color: var(--color-unaccent);
 }
 
+.shopping-element__delete {
+    padding-left: var(--spacing-small);
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-white);
+    background-image: url(img/cancel.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
 .shopping__close {
     position: absolute;
     width: 35px;
