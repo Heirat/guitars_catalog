@@ -28,7 +28,7 @@ class Shopping {
                 <table>
                     ${htmlCatalog}
                     <tr>
-                        <td class="shopping-element__name">💰 Сумма</td>
+                        <td class="shopping-element__name">💰 Total</td>
                         <td class="shopping-element__price">${sumCatalog.toLocaleString()} RUB</td>
                     </tr>
                 </table>

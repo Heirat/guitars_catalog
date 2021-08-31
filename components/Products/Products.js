@@ -1,8 +1,8 @@
 class Products {
     constructor() {
         this.classNameActive = 'products-element__btn_active';
-        this.labelAdd = 'Добавить в корзину';
-        this.labelRemove = 'Удалить из корзины';
+        this.labelAdd = 'Add to cart';
+        this.labelRemove = 'Delete from cart';
     }
 
     handleSetLocationStorage(element, id) {
